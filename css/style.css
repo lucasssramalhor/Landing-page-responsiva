@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Divs auxiliares */
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Header do site */
+
+header {
+    background-color: rgb(214, 214, 214);
+    padding: 1.5rem 2% 1.5rem 2%;
+
+}
+
+.logo-1 {
+    float: left;
+    background-image: url('../assets/logo1.png');
+    width: 15rem;
+    height: 6rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-2 {
+    float: right;
+    background-image: url('../assets/logo2.png');
+    width: 15rem;
+    height: 6rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Section cover-form */
+
+section.cover-form {
+    width: 100%;
+}
+
+.bg {
+    position: relative;
+    background-image: url('../assets/bg-form.jpg');
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    position: absolute;
+    float: right;
+    right: 3rem;
+    top: -2.5%;
+    width: 40rem;
+    height: 105%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-right: 4rem;
+	box-shadow: .1rem .1rem .2rem .1rem rgb(97, 97, 97);
+    text-align: left;
+}
+
+.form-container h2 {
+    background-color: rgba(234, 236, 239, 0.8);
+    padding: 2.5rem 1.5em;
+    color: rgb(56, 56, 56);
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+/* Formulário de contato */
+
+.form-container form {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.form-container form span {
+    font-size: 1.5rem;
+    color: rgb(56, 56, 56);
+}
+
+.form-wraper:not(:first-child) {
+    margin-top: 3rem;
+}
+
+.form-wraper:last-child {
+    margin-top: 2rem;
+}
+
+.form-container form input[type=text] {
+    width: 100%;
+    border: 0.1rem solid rgb(204, 204, 204);
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-container form input[type=email] {
+    width: 100%;
+    border: 0.1rem solid rgb(204, 204, 204);
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-container form input[type=submit] {
+    background-color: rgb(3, 60, 80);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.5rem;
+    height: 5rem;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+/* Section .chamada */
+
+section.chamada {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+section.chamada div.container {
+    padding: 7rem 0 5rem 0;
+    background-color: rgb(41, 82, 109);
+}
+
+section.chamada h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: lighter;
+    width: 98%;
+    max-width: 70rem;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+section.chamada h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: lighter;
+    width: 98%;
+    max-width: 70rem;
+    margin-top: 1rem;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Section do mosaico responsivo .mosaico */
+
+.flex-mosaico {
+    display: flex;
+}
+
+.item-1-mosaico {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+}
+
+.item-2-mosaico {
+    width: 40%;
+    padding: 6rem;
+    background-color: rgb(58, 135, 187);
+}
+
+.item-2-mosaico p {
+    font-size: 1.7rem;
+    text-align: justify;
+    color: rgb(238, 238, 238);
+    line-height: 2.5rem;
+}
+
+/* Footer do site */
+
+footer {
+    display: flex;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgb(214, 214, 214);
+}
+
+footer img {
+    width: 15rem;
+    height: 5em;
+    margin-bottom: 2rem;
+}
+
+footer p {
+    font-size: 1.6rem;
+    color: rgb(56, 56, 56);
+    margin-top: .8rem;
+}
+
+/* Media querie de 960px = 96rem */
+
+@media screen and (max-width: 96rem) {
+
+    /* Background da primeira section mobile do site */
+
+    .bg {
+        height: auto;
+		padding: 4rem 0;
+		text-align: center;
+    }
+
+    /* Formulário de contato da primeira section mobile */
+
+    .form-container {
+        height: auto;
+		width: 96%;
+		max-width: 40rem;
+		position: static;
+		display: inline-block;
+    }
+}   
+
+/* Media querie de 768px = 76.8rem */
+
+@media screen and (max-width: 76.8rem) {
+
+    /* Flex mosaico mobile */
+
+    .flex-mosaico {
+        display: block;
+    }
+    
+    .item-1-mosaico {
+        padding-top: 100%;
+        width: 100%;
+    }
+
+    .item-2-mosaico {
+        width: 100%;
+    }
+}
+
+/* Media querie de 510px = 51rem */
+
+@media screen and (max-width: 51rem) {
+
+    /* Header do site mobile */
+
+    .logo-1, .logo-2 {
+        margin: .1rem 7%;
+    }
+}
